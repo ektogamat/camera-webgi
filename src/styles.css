@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-  overscroll-behavior: none;
+    overscroll-behavior: none;
 }
 
 body {
@@ -34,9 +34,9 @@ body {
   scroll-behavior: smooth;
 }
 
-html {
+/* html, body {
   scroll-snap-type: y mandatory;
-}
+} */
 
 ol, ul {
 	list-style: none;
@@ -59,12 +59,13 @@ table {
 
 #webgi-canvas {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   position: fixed;
   top: 0;
   left: 0;
+  touch-action: none;
   /* pointer-events: none; */
 }
 
@@ -134,7 +135,7 @@ table {
   display: inline-flex;
   gap: 1em;
   align-items: center;
-  
+
 }
 
 .header--menu li{
@@ -557,7 +558,7 @@ h1{
     margin-top: -10px;
     position: relative;
   }
-  
+
   .hero--content > h2{
     text-align: center;
     margin-bottom: 9px;
@@ -566,7 +567,7 @@ h1{
     margin-right: 0;
     margin-top: 40px;
   }
-  
+
   .hero--content > p{
     font-style: normal;
     font-weight: 400;
@@ -577,7 +578,7 @@ h1{
     width: 85%;
     text-align: center;
   }
-  
+
   .performance--container {
     position: absolute;
     display: flex;
@@ -668,5 +669,5 @@ h1{
     line-height: 1em;
     margin-bottom: 40px;
   }
-  
+
 }
